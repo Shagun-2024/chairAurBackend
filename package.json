@@ -1,0 +1,12 @@
+{
+  "name": "04_backend_nextlevel",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "shagun",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
