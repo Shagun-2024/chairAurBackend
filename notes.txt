@@ -1,2 +1,4 @@
 ***backend next level ***
   - git basics , create repository , code push , etc. 
+  - .gitkeep is used to track empty folders
+  - install nodemon and prettier in devDependencies - e.g - npm i -D nodemon
