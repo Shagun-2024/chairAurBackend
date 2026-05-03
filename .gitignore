@@ -52,6 +52,9 @@ web_modules/
 # TypeScript cache
 *.tsbuildinfo
 
+# notes for playlist
+/notes.txt
+
 # Optional npm cache directory
 .npm
 

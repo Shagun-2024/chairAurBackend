@@ -1,4 +1,15 @@
-***backend next level ***
+***How to set up professional backend ***
   - git basics , create repository , code push , etc. 
   - .gitkeep is used to track empty folders
   - install nodemon and prettier in devDependencies - e.g - npm i -D nodemon
+
+*** connect database in MERN ***
+  - install mongoose dotenv express
+  - Note - always use try...catch and aync...await for better error handling
+
+*** custom API response and error handling ***
+  - npm i coookie-parser to get cookie from user browser
+  - npm i cors to apply cross origin give access to read 
+    backend to genuine frontend
+  - (req, res)  is not two element actually it is four
+    (err, req,res,next)
