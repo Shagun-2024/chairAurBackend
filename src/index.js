@@ -1,6 +1,10 @@
 // require('dotenv').config({path: './env'})
 import dotenv from "dotenv";
+<<<<<<< HEAD
 import { app } from "./app.js";
+=======
+
+>>>>>>> b7eff77627f0c89b9759d0d49dc531ecba299382
 import mongoose from "mongoose";
 import { DB_NAME } from "./constants.js";
 import connectDB from "./db/index.js";
@@ -9,6 +13,7 @@ dotenv.config({
   path: './.env'
 });
 
+<<<<<<< HEAD
 connectDB()
 .then(()=>{
   app.listen(process.env.PORT || 8000 , ()=>{
@@ -44,3 +49,6 @@ const app = express()
 })()
 
 */
+=======
+connectDB();
+>>>>>>> b7eff77627f0c89b9759d0d49dc531ecba299382
