@@ -13,3 +13,6 @@
     backend to genuine frontend
   - (req, res)  is not two element actually it is four
     (err, req,res,next)
+
+***User and vedio model with hooks and JWT ***
+  - 
