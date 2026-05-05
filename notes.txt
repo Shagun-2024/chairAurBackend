@@ -15,4 +15,8 @@
     (err, req,res,next)
 
 ***User and vedio model with hooks and JWT ***
-  - 
+  - create user and vedio model for project which is model of mongoDB
+
+*** How to upload file in backend | multer ***
+  - using cloudinary to store upload image 
+  - install cloudinary and multer 
