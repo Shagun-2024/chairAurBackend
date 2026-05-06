@@ -20,3 +20,75 @@
 *** How to upload file in backend | multer ***
   - using cloudinary to store upload image 
   - install cloudinary and multer 
+
+*** HTTP  crash course ***
+  - HyperText Transfer Protocol
+  - http sends plain text
+  - https send data in dcypt form it provides extra layer 
+  - URL/URI - uniform resource locator / identifiers
+
+  - What are HTTP headers
+    - metadata -> key-value sent along with request & reponse.
+    - caching , authentication , manage state 
+    - x-presfix --> 2012 (x-depricated)
+    - request headers -> from client
+    - response headers -> from servers
+    - Representation Headers -> encoding / compression
+    - payload header -> data
+
+    - Most common Headers 
+      - Accept: application/ json
+      - User-Agent
+      - Content - Type
+      - cookie
+      - cache - Control 
+
+    - CORS headers 
+      - Access Control Allow origin
+      - Access Control Allow credentials
+      - Access Control Allow Method
+
+    - Security Headers
+      - Cross origin Embeddes Policy
+      - Cross origin Security Policy
+      - Cross origin Opener Policy
+      - X-XSS Protection
+      
+    - HTTP methods
+      - Basic set of operations that can be used to interact with servers
+
+        - GET: retrieve a resource
+        - HEAD: No message body(response headers only)
+        - OPTIONS: what operations are available
+        - TRACE: loopback test (get some data)
+        - DELETE: remove a resource
+        - PUT: replace a resource
+        - POST: interact with resource (mostly add)
+        - PATCH: change part of a resource
+
+    - HTTP response status codes indicate whether a specific HTTP request has been successfully
+      completed. responses are grouped in five classes:
+      1. Informational responses( 100-199)
+      2. successful responses(200-299)
+      3. Redirection messages(300-399)
+      4. Client error responses(400-499)
+      5. Server error responses(500-599)
+  
+  - some famous code : 
+    - 100 continue
+    - 102 Processing 
+    - 200 ok
+    - 201 created
+    - 202 accepted
+    - 307 temporary redirect 
+    - 308 permanent redirect 
+    - 400 Bad request
+    - 401 Unauthorised
+    - 402 Payment required
+    - 404 not found 
+    - 500 Internal server error 
+    - 504 gateway time out
+
+*** Complete guide for router and controller ***
+  - create a userController 
+  - and testing route for /api/v1/users/register in postman
