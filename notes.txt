@@ -92,3 +92,6 @@
 *** Complete guide for router and controller ***
   - create a userController 
   - and testing route for /api/v1/users/register in postman
+
+*** Logic building - Register controller ***
+  - 
