@@ -1,6 +1,6 @@
 import mongoose,{model, Schema} from "mongoose"
 import jwt from "jsonwebtoken"
-import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"
 
 const userSchema = new Schema(
   {
@@ -27,15 +27,15 @@ const userSchema = new Schema(
     },
     avatar: {
       type:String, //cloudinary url
-      required: true,
+      required: true,  
      },
      coverImage: {
       type:String //cloudinary url
      },
-     watchHistory:{
+     watchHistory:[{
       type:Schema.Types.ObjectId,
       ref:"Vedio"
-     },
+     }],
      password:{
       type:String,
       required:[true,'Password is required'],
@@ -49,10 +49,9 @@ const userSchema = new Schema(
 
 // this hooks is used to perform some fxn before data save
 userSchema.pre("save", async function (next){
-  if(!this.isModified("password")) return next();
+  if(!this.isModified("password")) return;
 
   this.password = await bcrypt.hash(this.password,10)
-  next()
 })
 
 userSchema.methods.isPasswordCorrect = async function 

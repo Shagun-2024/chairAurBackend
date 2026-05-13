@@ -94,4 +94,10 @@
   - and testing route for /api/v1/users/register in postman
 
 *** Logic building - Register controller ***
-  - 
+  - add register controller 
+  - fixes some bugs
+
+*** How to use postman for backend ***
+  - testing time in  postman
+
+*** error occur while upload in mongoDB ***
